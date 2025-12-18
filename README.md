@@ -7,6 +7,36 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Demo Sistem (Alur Kerja)
+
+Sistem ini adalah pemesanan menu restoran sederhana dengan keranjang belanja dan konfirmasi kasir.
+
+### Cara Kerja
+
+1. Pelanggan buka landing page di `/` lalu pilih menu dan varian, kemudian klik "Tambah ke Keranjang".
+2. Di bagian Keranjang, pelanggan bisa ubah qty, hapus item, atau checkout.
+3. Setelah checkout, sistem membuat `order_code`. Pelanggan menunjukkan kode ini ke kasir untuk konfirmasi.
+4. Admin/kasir masuk ke `/admin/orders` untuk melihat dan mengelola detail order serta status pembayaran.
+
+### Langkah Demo Cepat
+
+1. Migrasi dan seed data:
+   - `php artisan migrate`
+   - `php artisan db:seed`
+2. Buat akun dan login:
+   - `/register` lalu `/login`
+3. Coba pemesanan:
+   - Tambah beberapa menu di `/` → checkout → dapat `order_code`
+4. Konfirmasi di admin:
+   - `/admin/orders` → buka detail order
+
+### Halaman Penting
+
+- Landing page + keranjang: `/`
+- Login/daftar: `/login`, `/register`
+- Admin menu: `/admin/menus`
+- Admin order: `/admin/orders`
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
