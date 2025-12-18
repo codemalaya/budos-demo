@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-white" id="navbar">
         <div class="container">
             <a class="navbar-brand d-md-none d-block" href="/">
-                <img src="{{ asset('assets/images/logo1.png') }}" alt="Bootstrap" width="125">
+                <img src="{{ asset('assets/images/ddd.png') }}" alt="Bootstrap" width="125">
             </a>
             <button class="navbar-toggler border-0 rounded" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false"
@@ -10,7 +10,7 @@
             </button>
             <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
                 <a class="navbar-brand col-lg-3 me-0 d-none d-md-block" href="/">
-                    <img src="{{ asset('assets/images/logo1.png') }}" alt="Bootstrap" width="125">
+                    <img src="{{ asset('assets/images/ddd.png') }}" alt="Bootstrap" width="125">
                 </a>
                 <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                     <li class="nav-item">

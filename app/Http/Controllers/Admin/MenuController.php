@@ -48,6 +48,13 @@ class MenuController extends Controller
         return view('admin.menus.edit', compact('menu'));
     }
 
+    public function show(Menu $menu)
+    {
+        $menu->load('variants');
+
+        return view('admin.menus.show', compact('menu'));
+    }
+
     public function update(Request $request, Menu $menu)
     {
         $validated = $request->validate([
